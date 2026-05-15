@@ -14,10 +14,10 @@ DMS AI Assistant - A QML/JavaScript plugin for DankMaterialShell providing multi
 
 ```bash
 # Run with debug logging (recommended for development)
-QS_FORCE_STDERR_LOGGING=1 DMS_LOG_LEVEL=debug dms run
+QS_FORCE_STDERR_LOGGING=1 DMS_LOG_LEVEL=debug hype run
 
 # Restart DMS to reload plugin changes
-dms restart
+hype restart
 
 # Check plugin settings
 cat ~/.config/DankMaterialShell/plugin_settings.json | jq .aiAssistant
@@ -96,7 +96,7 @@ With `DMS_LOG_LEVEL=debug`, watch for:
 
 ## Testing Checklist
 
-- [ ] Settings persist across `dms restart`
+- [ ] Settings persist across `hype restart`
 - [ ] Chat history survives restart (if provider config unchanged)
 - [ ] All providers work with real API keys
 - [ ] Streaming displays content (even if all-at-once)
@@ -114,5 +114,5 @@ With `DMS_LOG_LEVEL=debug`, watch for:
 
 - **No build needed** - Changes take effect after DMS restart
 - **Read before editing** - Always read files first to understand context
-- **Test with debug logging** - Run `QS_FORCE_STDERR_LOGGING=1 DMS_LOG_LEVEL=debug dms run`
+- **Test with debug logging** - Run `QS_FORCE_STDERR_LOGGING=1 DMS_LOG_LEVEL=debug hype run`
 - **Avoid QtQuick.Controls** - Not compatible with Quickshell runtime

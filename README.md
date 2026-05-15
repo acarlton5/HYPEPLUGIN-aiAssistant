@@ -41,7 +41,7 @@ An integrated AI chat assistant plugin for DankMaterialShell with support for mu
 2. Restart DankMaterialShell:
 
    ```bash
-   dms restart
+   hype restart
    ```
 
 3. Enable the plugin:
@@ -146,7 +146,7 @@ The AI Assistant can be triggered via:
 1. **IPC Command**:
 
    ```bash
-   dms ipc call plugins toggle aiAssistant
+   hype ipc call plugins toggle aiAssistant
    ```
 
 2. **Keybind**: Configure in your compositor configuration
@@ -158,7 +158,7 @@ Mod+A { spawn "dms" "ipc" "call" "plugins" "toggle" "aiAssistant"; }
 
 ```conf
 # Hyprland example:
-bind = SUPER, A, exec, dms ipc call plugins toggle aiAssistant
+bind = SUPER, A, exec, hype ipc call plugins toggle aiAssistant
 ```
 
 ### Chat Interface

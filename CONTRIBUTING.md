@@ -63,7 +63,7 @@ Thank you for considering contributing to the AI Assistant plugin! This document
 
 3. Make changes and test by running DMS manually:
    ```bash
-   QS_FORCE_STDERR_LOGGING=1 DMS_LOG_LEVEL=debug dms run
+   QS_FORCE_STDERR_LOGGING=1 DMS_LOG_LEVEL=debug hype run
    ```
 
 4. Watch terminal output for plugin logs and errors
